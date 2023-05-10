@@ -1,19 +1,16 @@
 import React from "react";
-import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
+import { Text, StyleSheet, View, Image } from "react-native";
 
 const ImageDetail = (props) => {
   return (
     <View>
       <Image source={props.imageSource} />
-      <Text style={styles.text}>{props.title} </Text>
+      <Text> {props.title} </Text>
+      <Text> Image Score: {props.score} </Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 30,
-  },
-});
+const styles = StyleSheet.create({});
 
 export default ImageDetail;
